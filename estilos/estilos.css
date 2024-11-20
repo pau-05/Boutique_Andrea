@@ -1,6 +1,14 @@
-body{
-    @font-face {
-        font-family: Montserrat;
-        src: url("../fuente/Montserrat-VariableFont_wgh.ttf");
+@font-face {
+    font-family: Flor;
+    src: url("../fuente/Cookie-Regular.ttf");
+    font-family: MonoritaNegrita;
+    src: url("../fuente/HFMonorita-Black.ttf");
+    font-family: Monorita;
+    src: url("../fuente/HFMonorita-Regular.ttf");
     }
+p{
+    font-family: Mono;
+}
+/*p{
+    font-family: Monorita;
 }
