@@ -1,14 +1,25 @@
 @font-face {
-    font-family: Flor;
-    src: url("../fuente/Cookie-Regular.ttf");
-    font-family: MonoritaNegrita;
-    src: url("../fuente/HFMonorita-Black.ttf");
     font-family: Monorita;
     src: url("../fuente/HFMonorita-Regular.ttf");
-    }
+} /*fuente para el texto de la página*/
+@font-face{
+    font-family: Flor;
+    src: url("../fuente/FleurDeLeah-Regular.ttf");
+} /*fuente solo para el nombre de la tienda*/
+body{
+    background-color: #F4F6FF;
+} /**/
+h1{
+    font-family: Flor;
+    text-align: center;
+    font-size: 2.5rem;
+} /**/
 p{
-    font-family: Mono;
-}
-/*p{
     font-family: Monorita;
+} /*Aplico fuente para el resto del texto*/
+.container-items img{
+    justify-content: space-around;
+    width: 20vw;
+    height: 40vh;
+    object-fit: none;
 }
