@@ -7,19 +7,35 @@
     src: url("../fuente/FleurDeLeah-Regular.ttf");
 } /*fuente solo para el nombre de la tienda*/
 body{
+    margin: 0 auto;
+    max-width: 1200px;
     background-color: #F4F6FF;
-} /**/
-h1{
-    font-family: Flor;
-    text-align: center;
-    font-size: 2.5rem;
-} /**/
-p{
     font-family: Monorita;
-} /*Aplico fuente para el resto del texto*/
-.container-items img{
+} 
+header{
+    font-family: Flor;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px, 20px, 40px, 20px;
+}
+header img{
+    margin-top: 45px;
+    width: 40px;
+    height: 40px;
+}
+img{
+    max-width: 100%;
+}/**/
+/**/
+.container-items{
     justify-content: space-around;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+.container-items img{
     width: 20vw;
     height: 40vh;
-    object-fit: none;
+    object-fit: cover;
 }
