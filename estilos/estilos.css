@@ -21,14 +21,14 @@ header{
     justify-content: space-between;
     padding: 30px, 20px, 40px, 20px;
 }
+header a h1:hover{
+    text-decoration: underline;
+    color: rgb(6, 17, 113);
+}
 header h1{
     color:black;
     text-decoration:none;
 
-}
-header a h1:hover{
-    text-decoration: underline;
-    color: rgb(6, 17, 113);
 }
 header img{
     margin-top: 45px;
