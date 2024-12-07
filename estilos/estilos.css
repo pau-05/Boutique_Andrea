@@ -7,7 +7,7 @@
     src: url("../fuente/FleurDeLeah-Regular.ttf");
 } /*fuente solo para el nombre de la tienda*/
 body{
-    margin: 0 auto;
+    margin: 0;
     max-width: 1200px;
     background-color: #F4F6FF;
     font-family: Monorita;
@@ -239,7 +239,7 @@ background-color: rgb(141, 85, 5);
 .footer{
     padding: 35px 40px 50px;
     background-color: #10375C;
-    margin: auto;
+    margin: 0;
 }
 .footer-info{
     max-width: 1000px;
@@ -282,6 +282,10 @@ background-color: rgb(141, 85, 5);
     padding-left: 30px;
 }
 /*MODA MUJER, HOMBRE Y ADOLESCENTE*/
+h2{
+    font-size: 2rem;
+    padding-left: 23%;
+}
 .container-prod{
     justify-content: space-around;
     text-align: center;
@@ -290,14 +294,14 @@ background-color: rgb(141, 85, 5);
     margin-top: 150px;
 }
 .container-prod img{
-    width: 20vw;
-    height: 40vh;
+    width: 30vw;
+    height: 60vh;
     object-fit: cover;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .detalles{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     gap: 24px;
 }
@@ -309,7 +313,4 @@ background-color: rgb(141, 85, 5);
 }
 .detalles details{
     cursor: pointer;
-}
-.detalles[open]{
-    flex-direction: column;
 }
