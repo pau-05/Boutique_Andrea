@@ -8,6 +8,7 @@
 } /*fuente solo para el nombre de la tienda*/
 body{
     margin: 0;
+    box-sizing: border-box;
     max-width: 1200px;
     background-color: #F4F6FF;
     font-family: Monorita;
@@ -234,9 +235,10 @@ background-color: rgb(141, 85, 5);
     object-fit: cover;
 }
 .footer{
-    padding: 35px 40px 50px;
+    padding: 35px 40px 25px;
     background-color: #10375C;
-    margin: 0;
+    margin: 0%;
+    width: 95.4%;
 }
 .footer-info{
     max-width: 1000px;
@@ -311,6 +313,13 @@ a h2:hover{
     object-fit: cover;
     margin-top: 1px;
 }
-.detalles details{
+details{
+    display: inline-block;
     cursor: pointer;
+    overflow: hidden;
+}
+details[open]{
+    font-size: small;
+    text-align: right;
+    transition: height 0.3s ease;
 }
