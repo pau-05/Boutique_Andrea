@@ -8,8 +8,10 @@
 } /*fuente solo para el nombre de la tienda*/
 body{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    max-width: 1200px;
+    width: 100%;
+    height: 100%;
     background-color: #F4F6FF;
     font-family: Monorita;
 } 
@@ -24,12 +26,13 @@ header{/*Formato del encabezado*/
 }
 header h1{
     color:black;
+    justify-content: flex-start;
 }
 header img{
     margin-top: 45px;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
 }
 .botones{ /*Colocar boton inicio de sesión*/
     align-items: center;
@@ -45,7 +48,7 @@ header img{
 .cuenta{/*Circulito con el contador de productos (necesita funcion javascript)*/
     width: 20px;
     height: 20px;
-    background-color: aqua;
+    background-color: rgb(255, 204, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: #000000;
@@ -57,10 +60,7 @@ header img{
     position: absolute;
     right: -7px;
     bottom: -5px;
-
 }
-
-
 .carrito{/*desplegable de la bolsa*/
     font-family: Monorita;
     width:250px;
@@ -74,17 +74,14 @@ header img{
     border-radius: 5px;
     box-sizing: border-box;
     display: none;/*que no se vea asta que el cursor este encima*/
-
 }
 .bolsa:hover .carrito{
     display: block;/*se ve el desplegable*/
     position: absolute;
     z-index: 1;/*Carrrito por encima de carrusel*/
 }
-
 .carrito .arriba{
     width: 100%;
-    
 }
 .arriba h2{
     font-size: 20px;
@@ -101,7 +98,6 @@ header img{
 }
 .abajo{
     width: 100%;
-    
 }
 .abajo .precios{/*El dinero que gastaremos (hay que crear una función)*/
     width: 100%;
@@ -111,11 +107,9 @@ header img{
     margin-top: 15px;
     box-sizing: border-box;
     align-items: center;
-   
 }
 .precios p{
-font-size: 10px;
-
+    font-size: 10px;
 }
 .abajo .botonprecio{
     width: 100%;
@@ -128,7 +122,6 @@ font-size: 10px;
     color: #ffffff;
     margin-top: 5px;
     cursor: pointer;
-    
 }
 .carrito .abajo .botonprecio button:active{
     background-color: #10375C;
@@ -140,7 +133,6 @@ font-size: 10px;
     font-size: 10px;
     margin-top: 10px;
 }
-
 /*FIN CARRITO*/
 /*En index opciones de MODA*/
 .container-item a{/*Texto opciones*/
@@ -155,7 +147,6 @@ a{
     text-decoration: underline;
     color: black;
 }
-
 img{
     max-width: 100%;
 }
@@ -176,34 +167,25 @@ img{
     padding: 35px 40px 25px;
     background-color: #10375C;
     margin: 0%;
-    width: 95.4%;
+    width: 93.49%;
 }
 /*Fin menu moda*/
 /*INICIO SESION*/
 .pagina{
     background-image: linear-gradient(to right bottom, rgba(148, 72, 255, 0.715),
     rgba(7, 2, 79, 0.776));
-
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.logo{/*Logo de la tienda*/
-    width: 300px;
-    position: relative;
-    top: 25px;
-    left: 30px;
-    z-index: 100;
-}
-@media (max-width:740px){
-    .logo{
-        width: 190;
-    }
+.pagina a h1{
+    font-size: 5rem;
 }
 .iniciarsesion{/*Estilo login*/
     background-color: #0b2842;
     border-radius: 5px;
     color: #ffffff;
-    margin: 40px auto 100px;
+    margin: auto auto auto;
     padding: 70px 60px 150px;
     width: 450px;
     font-family: Monorita;
@@ -220,14 +202,14 @@ img{
 .iniciarsesion h2{
     margin: 0 0 25px;
     padding-right: 100px;
-    font-size: 80px;
+    font-size: 4rem;
     text-align: center;
     font-family: Flor;
 }
 .iniciarsesion input{/*Recuadros para rellenar información*/
     background-color: #ffffffc0;
     font-family: Monorita;
-    font-size: 20px;
+    font-size: 1.2rem;
     display: block;
     color: #fff;
     width: 100%;
@@ -258,7 +240,7 @@ img{
     text-align: center;
 }
 .iniciarsesion input[type="submit1"]:hover{/*Animación iniciar sesión*/
-background-color: rgb(141, 85, 5);
+    background-color: rgb(141, 85, 5);
 }
 .iniciarsesion p {
     text-align: center;
@@ -323,7 +305,6 @@ background-color: rgb(141, 85, 5);
 }
 .footer-signin p{
     text-align: center;
-   
 }
 @media (max-width:740px){
     .footer-signin p{
@@ -361,7 +342,6 @@ background-color: rgb(141, 85, 5);
 }
 /*FIN CARRUSEL*/
 /*PIE DE PAGINA CON INFORMACIÓN DE AYUDA*/
-
 .footer-info{
     max-width: 1000px;
     margin: auto;
@@ -390,7 +370,6 @@ background-color: rgb(141, 85, 5);
     font-size: 10px;
 }
 .footer-info select{
-   
     width: 120px;
     height: 50px; 
     background-color: #0b2842;
@@ -408,8 +387,9 @@ a h2:hover{
     text-decoration: underline;
 }
 .container-prod{
+    position: relative;
     justify-content: space-around;
-    text-align: center;
+    place-items: center;
     display: grid;
     margin-bottom: 150px;
     margin-top: 150px;
@@ -421,16 +401,13 @@ a h2:hover{
     margin-top: 40px;
 }
 .detalles{/*desplegable con información*/
+    position: absolute;
+    padding: 25px ;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 24px;
-}
-.detalles img{
-    width: 2.5vw;
-    height: 5vh;
-    object-fit: cover;
-    margin-top: 1px;
+    bottom: -15%;
 }
 details{
     display: inline-block;
@@ -439,9 +416,11 @@ details{
 }
 details[open]{
     font-size: small;
-    text-align: right;
+    text-align: left;
     transition: height 0.3s ease;
-    
+}
+details p{
+    margin: 0%;
 }
 /*BOTON:AÑADIR CARRITO*/
 button{
