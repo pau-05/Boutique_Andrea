@@ -7,7 +7,8 @@
     src: url("../fuente/FleurDeLeah-Regular.ttf");
 } /*fuente solo para el nombre de la tienda*/
 body{
-    margin: 0 auto;
+    margin: 0;
+    box-sizing: border-box;
     max-width: 1200px;
     background-color: #F4F6FF;
     font-family: Monorita;
@@ -19,13 +20,15 @@ header{
     justify-content: space-evenly;
     padding: 30px, 20px, 40px, 20px;
 }
-a{
+.container-item a{
     font-size: 1.5rem;
     font-weight: bold;
+}
+a{
     text-decoration: none;
     color: black;
 }
-a:hover{
+.container-item a:hover{
     text-decoration: underline;
     color: black;
 }
@@ -125,7 +128,6 @@ background-color: rgb(141, 85, 5);
     text-align: center;
     font-size: 20px;
 }
-
 .iniciarsesion input[type="submit2"]{
     background-color: #949494;
     font-size: 20px;
@@ -146,7 +148,6 @@ background-color: rgb(141, 85, 5);
 .olvidar a:hover{
     text-decoration: underline;
 }
-
 .iniciarsesion .help{
     color: #949494;
     margin: 0;
@@ -156,25 +157,21 @@ background-color: rgb(141, 85, 5);
     display: flex;
     justify-content: space-between;
 }
-
 .iniciarsesion .help .check{
     display: flex;
     align-items: center;
 }
-
 .check input{
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
-
 .check p {
     margin-left: 5px;
     width: 100%;
     font-size: 20px;
     color: #fff;
 }
-
 .footer-signin .new{
     margin-top: 12px;
     font-size: 20px;
@@ -195,9 +192,8 @@ background-color: rgb(141, 85, 5);
     .footer-signin p{
         text-align:left;
         padding-right: 50px;
-    }}
-
-
+    }
+}
 /**/
 .carrusel{
     margin-bottom: 50px;
@@ -239,9 +235,10 @@ background-color: rgb(141, 85, 5);
     object-fit: cover;
 }
 .footer{
-    padding: 35px 40px 50px;
+    padding: 35px 40px 25px;
     background-color: #10375C;
-    margin: auto;
+    margin: 0%;
+    width: 95.4%;
 }
 .footer-info{
     max-width: 1000px;
@@ -282,4 +279,47 @@ background-color: rgb(141, 85, 5);
     color: #fff;
     padding: 13px;  
     padding-left: 30px;
+}
+/*MODA MUJER, HOMBRE Y ADOLESCENTE*/
+h2{
+    font-size: 2rem;
+    padding-left: 23%;
+}
+a h2:hover{
+    text-decoration: underline;
+}
+.container-prod{
+    justify-content: space-around;
+    text-align: center;
+    display: grid;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+.container-prod img{
+    width: 30vw;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 40px;
+}
+.detalles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+}
+.detalles img{
+    width: 2.5vw;
+    height: 5vh;
+    object-fit: cover;
+    margin-top: 1px;
+}
+details{
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+details[open]{
+    font-size: small;
+    text-align: right;
+    transition: height 0.3s ease;
 }
