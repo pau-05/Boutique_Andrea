@@ -1,10 +1,10 @@
 @font-face {
     font-family: Monorita;
-    src: url("../fuente/HFMonorita-Regular.ttf");
+    src: url("../font/HFMonorita-Regular.ttf");
 } /*fuente para el texto de la página*/
 @font-face{
     font-family: Flor;
-    src: url("../fuente/FleurDeLeah-Regular.ttf");
+    src: url("../font/FleurDeLeah-Regular.ttf");
 } /*fuente solo para el nombre de la tienda*/
 body{
     margin: 0;
@@ -59,7 +59,7 @@ header img{
     border: 1px solid #ffffff;
     position: absolute;
     right: -7px;
-    bottom: -5px;
+    bottom: 0px;
 }
 .carrito{/*desplegable de la bolsa*/
     font-family: Monorita;
@@ -131,7 +131,7 @@ header img{
     width: 100%;
     text-align: right;
     font-size: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 /*FIN CARRITO*/
 /*En index opciones de MODA*/
@@ -399,6 +399,7 @@ a h2:hover{
     height: 60vh;
     object-fit: cover;
     margin-top: 40px;
+    
 }
 .detalles{/*desplegable con información*/
     position: absolute;
@@ -413,11 +414,14 @@ details{
     display: inline-block;
     cursor: pointer;
     overflow: hidden;
+    
 }
 details[open]{
+  
     font-size: small;
-    text-align: left;
+    text-align: right;
     transition: height 0.3s ease;
+    
 }
 details p{
     margin: 0%;
